@@ -272,3 +272,40 @@ footer {
         border-radius: 0px;
     }
 }
+
+
+
+
+.nav_link {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_link li {
+    display: inline-block;
+    margin-right: 20px;
+    position: relative;
+}
+
+.nav_link li a {
+    text-decoration: none;
+    color: #333;
+    position: relative;
+}
+
+.nav_link li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #007bff; /* Change this to your desired underline color */
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.nav_link li a:hover::after {
+    width: 100%;
+}
